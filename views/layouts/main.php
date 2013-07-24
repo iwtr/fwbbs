@@ -51,9 +51,9 @@
 							'visible' => isAdmin(),
 					),
 					array(
-							'label'=>'RoleSet',
+							'label'=>'権限設定の読み込み',
 							'url'=>array('/site/roleset'),
-							//'visible' => Yii::app()->user->getIsAdmin(),
+							'visible' => Yii::app()->user->getIsAdmin(),
 					),
 					array(
 							'label'=>'ログイン',

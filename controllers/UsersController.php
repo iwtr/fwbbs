@@ -107,7 +107,7 @@ class UsersController extends Controller
 	public function actionUpdate()
 	{
 		$model=$this->loadModel();
-
+		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

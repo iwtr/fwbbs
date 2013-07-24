@@ -11,7 +11,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Delete Board</h1>
+<h1>トピック削除 #<?php echo $board->id; ?></h1>
 
 <?php
 echo $this->renderPartial('_delete', array(

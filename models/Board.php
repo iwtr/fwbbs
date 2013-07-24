@@ -47,7 +47,7 @@ class Board extends CActiveRecord
 			array('last_updated', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, del_key, created_at, last_updated', 'safe', 'on'=>'search'),
+			array('id, title, user_id, del_key, created_at, last_updated', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,6 +73,7 @@ class Board extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'タイトル',
+			'user_id' => 'ユーザーID',
 			'del_key' => '削除キー',
 			'created_at' => '作成日時',
 			'last_updated' => '最終更新日時',
@@ -90,9 +91,18 @@ class Board extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		
+		if($this->user_id != NULL)
+		{
+			//現在$this->user_idには検索ユーザー名が入っている
+			$author = Users::Model()->find('name=:name', array(':name' => $this->user_id));
+			//それを正しい値に直す
+			$this->user_id = $author->id;
+		}
+		
 		$criteria->compare('id',$this->id);
 		$criteria->compare('title',$this->title,true);
+		$criteria->compare('user_id',$this->user_id,true);
 		$criteria->compare('del_key',$this->del_key,true);
 		$criteria->compare('created_at',$this->created_at,true);
 		$criteria->compare('last_updated',$this->last_updated,true);

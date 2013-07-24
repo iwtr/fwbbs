@@ -121,7 +121,8 @@ class CommentController extends Controller
 		if(isset($_POST['Comment']))
 		{
 			if(Yii::app()->user->checkAccess('updateOwnComment', array('comment' => $model))
-							|| $model->del_key === $_POST['Comment']['del_key'])
+							|| $model->del_key === $_POST['Comment']['del_key']
+							|| isAdmin())
 			{
 				$model->attributes=$_POST['Comment'];
 				if($model->save())
@@ -149,7 +150,8 @@ class CommentController extends Controller
 		$model = $this->loadModel($id);
 		
 		if(Yii::app()->user->checkAccess('deleteOwnComment', array('comment' => $model))
-						|| $model->del_key === $_POST['Comment']['del_key'])
+						|| $model->del_key === $_POST['Comment']['del_key']
+						|| isAdmin())
 		{
 			if($model->image != NULL)
 				unlink("images/$model->image");
@@ -189,6 +191,7 @@ class CommentController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		$this->layout='';
 		$model=new Comment('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Comment']))

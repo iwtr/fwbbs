@@ -27,10 +27,7 @@ $('.search-form form').submit(function(){
 
 <h1>管理メニュー</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<p>検索条件に比較演算子(<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>, <b>=</b>)が使えます。</p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -48,17 +45,16 @@ $this->widget('zii.widgets.grid.CGridView', array(
 	'columns'=>array(
 		'id',
 		'board_id',
-		//'comnum',
 		'user_id',
-		'del_key',
+		//'del_key',
 		'pen_name',
 		'contents',
-		'image',
-		//array('name' => 'image', 'value' => $mocddel->image!=NULL ? '有' : '無',),
+		array('name' => 'image'),
 		'created_at',
 		
 		array(
-			'class'=>'CButtonColumn',
+				'class'=>'CButtonColumn',
+				
 		),
 	),
 )); ?>

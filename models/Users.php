@@ -62,6 +62,7 @@ class Users extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'comments' => array(self::HAS_MANY, 'Comment', 'user_id'),
+			'boards' => array(self::HAS_MANY, 'Board', 'user_id'),
 		);
 	}
 

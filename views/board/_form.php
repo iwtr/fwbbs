@@ -55,14 +55,15 @@
 	
 	<?php 
 	//新規作成か作者以外が更新する場合は表示
-	if(!Yii::app()->user->checkAccess('updateOwnBoard', array('board' => $board))) : 
+	if(!isAdmin()||$board->isNewRecord): if(!Yii::app()->user->checkAccess('updateOwnBoard', array('board' => $board))) : 
 	?>
 	<div class="row">
 		<?php echo $form->labelEx($board,'del_key'); ?>
 		<?php echo $form->textField($board,'del_key',array('value'=>'', 'size'=>4,'maxlength'=>4)); ?>
+		<?php echo $board->isNewRecord ? '入力がない場合は0000になります。' : ''; ?>
 		<?php echo $form->error($board,'del_key'); ?>
 	</div>
-	<?php endif; ?>
+	<?php endif;endif; ?>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($board->isNewRecord ? '作成' : '更新',

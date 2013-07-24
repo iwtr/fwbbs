@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Users', 'url'=>array('index')),
-	array('label'=>'Create Users', 'url'=>array('create')),
-	array('label'=>'View Users', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Users', 'url'=>array('admin')),
+	//array('label'=>'List Users', 'url'=>array('index')),
+	array('label'=>'ユーザー新規作成', 'url'=>array('create')),
+	//array('label'=>'View Users', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'管理メニュー', 'url'=>array('admin'), 'visible' => isAdmin()),
 );
 ?>
 
-<h1>Update Users <?php echo '<br>#'. $model->id. ' '. $model->name; ?></h1>
+<h1>ユーザー情報更新</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

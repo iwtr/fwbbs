@@ -9,6 +9,6 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Delete Comment <?php echo $model->id; ?></h1>
+<h1>コメント削除 #<?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_delete', array('model'=>$model)); ?>

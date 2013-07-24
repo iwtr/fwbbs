@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 	$board->title,
 );
 
-$linkoption = Yii::app()->user->checkAccess('deleteOwnBoard', array('board' => $board)) ?
+$linkoption = Yii::app()->user->checkAccess('deleteOwnBoard', array('board' => $board))||isAdmin() ?
 				array('submit'=>array('delete','id'=>$board->id), 'confirm'=>'本当に削除しますか？') :
 				array('submit'=>array('delete','id'=>$board->id));
 

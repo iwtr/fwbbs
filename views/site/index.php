@@ -2,7 +2,7 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 
-<h2 style="margin-bottom: 0;">最近書き込みがあったトピック</h2>
+<h2 style="margin-bottom: 0;">書き込みがあったトピック(最新５件)</h2>
 
 <?php /*foreach($data as $value): ?>
 	<div class="updates">
@@ -24,9 +24,11 @@ $this->pageTitle = Yii::app()->name;
 $this->widget('zii.widgets.grid.CGridView', array(
 		'id' => 'update-grid',
 		'dataProvider' => $data,
+		'ajaxUpdate' => false,
 		'selectableRows' => 0,
 		'enablePagination' => false,
 		'enableSorting' => false,
+		'summaryText' => '',
 		'columns' => array(
 				'title',
 				'created_at',

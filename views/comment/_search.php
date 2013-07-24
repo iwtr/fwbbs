@@ -22,18 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'comnum'); ?>
-		<?php echo $form->textField($model,'comnum'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'user_id'); ?>
 		<?php echo $form->textField($model,'user_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'del_key'); ?>
-		<?php echo $form->textField($model,'del_key',array('size'=>4,'maxlength'=>4)); ?>
 	</div>
 
 	<div class="row">

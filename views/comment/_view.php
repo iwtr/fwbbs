@@ -13,10 +13,6 @@
 	<?php echo CHtml::encode($data->board_id); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('comnum')); ?>:</b>
-	<?php echo CHtml::encode($data->comnum); ?>
-	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
 	<?php echo CHtml::encode($data->user_id); ?>
 	<br />
@@ -34,7 +30,7 @@
 	<br />
 	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
-	<?php echo CHtml::encode($data->image); ?>
+	<?php echo CHtml::image('/~iwagaya/fwbbs/images/'.$data->image,'#'); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>

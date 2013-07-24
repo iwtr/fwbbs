@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'トピック作成', 'url'=>array('create')),
-	array('label' => 'トピック検索', 'url' => array('find')),
+	//array('label' => 'トピック検索', 'url' => array('find')),
 	array('label'=>'管理メニュー', 'url'=>array('admin'), 'visible'=>isAdmin()),
 );
 ?>

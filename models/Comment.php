@@ -139,7 +139,7 @@ class Comment extends CActiveRecord
 				}
 				
 				$info = pathinfo($_FILES['Comment']['name']['image']);
-				$this->image = date("ymdHis",time()).'_'.md5(uniqid(rand(), true)).'.'.$info['extension'];
+				$this->image = date("ymd",time()).'_'.uniqid(rand(0,100)).'.'.$info['extension'];
 			}
 			return true;
 		}

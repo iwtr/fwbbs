@@ -8,7 +8,6 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Comment', 'url'=>array('index')),
 	array('label'=>'Create Comment', 'url'=>array('create')),
 	array('label'=>'Update Comment', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Comment', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
@@ -16,14 +15,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Comment #<?php echo $model->id; ?></h1>
+<h1>コメント詳細 #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
 		'board_id',
-		'comnum',
 		'user_id',
 		'del_key',
 		'pen_name',

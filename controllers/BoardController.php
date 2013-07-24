@@ -8,7 +8,7 @@ class BoardController extends Controller
 	 */
 	public $layout='//layouts/column2';
 	//public $menuattr = array('title' => 'aaa');
-
+	
 	/**
 	 * @return array action filters
 	 */
@@ -56,7 +56,6 @@ class BoardController extends Controller
 				
 		);
 	}
-	/*
 	//ユーザーがトピックの作者かどうか
 	protected function checkupdateBoard()
 	{
@@ -66,7 +65,7 @@ class BoardController extends Controller
 	{
 		return Yii::app()->user->checkAccess('deleteOwnBoard', array('board' =>$this->loadBoard($id)));
 	}
-	*/
+	
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
@@ -152,7 +151,8 @@ class BoardController extends Controller
 		if(isset($_POST['Board']))
 		{
 			if(Yii::app()->user->checkAccess('updateOwnBoard', array('board' => $board))
-							|| $board->del_key === $_POST['Board']['del_key'])
+							|| $board->del_key === $_POST['Board']['del_key']
+							|| isAdmin())
 			{
 				$board->attributes=$_POST['Board'];
 				if($board->save())
@@ -180,7 +180,8 @@ class BoardController extends Controller
 		$board = $this->loadBoard($id);
 		
 		if(Yii::app()->user->checkAccess('deleteOwnBoard', array('board' => $board))
-						|| $board->del_key === $_POST['Board']['del_key'])
+						|| $board->del_key === $_POST['Board']['del_key']
+						|| isAdmin())
 		{
 			$board->delete();
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));

@@ -8,7 +8,8 @@
 
 <?php
 $id = $_GET['id'];
-$action = ($_GET['r']=='board/view') ? array('comment/create') : array("comment/update&id=$id"); 
+$action = ($_GET['r']=='board/view') ? array('comment/create') : array("comment/update&id=$id");
+
 $form=$this->beginWidget('CActiveForm', array(
 		'action' => $action,
 		'id'=>'comment-form',
@@ -17,7 +18,7 @@ $form=$this->beginWidget('CActiveForm', array(
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
+	
 	<?php echo $form->errorSummary($comment); ?>
 
 	<div class="row" style="visibility:<?php echo Yii::app()->user->isGuest ? 'visible':'hidden'; ?>;">
@@ -45,13 +46,14 @@ $form=$this->beginWidget('CActiveForm', array(
 	</div>
 	<?php endif; ?>
 	
-	<?php if(!Yii::app()->user->checkAccess('updateOwnComment', array('comment' => $comment))): ?>
+	<?php if(!isAdmin()||$comment->isNewRecord): if(!Yii::app()->user->checkAccess('updateOwnComment', array('comment' => $comment))): ?>
 	<div class="row">
 		<?php echo $form->labelEx($comment,'del_key'); ?>
-		<?php echo $form->textField($comment,'del_key',array('value'=>'', 'size'=>4,'maxlength'=>4)); ?>
+		<?php echo $form->textField($comment,'del_key', array('value'=>'','size'=>4,'maxlength'=>4)); ?>
+		<?php echo $_GET['r']=='board/view' ? '入力がない場合は0000になります。' : ''; ?>
 		<?php echo $form->error($comment,'del_key'); ?>
 	</div>
-	<?php endif; ?>
+	<?php endif;endif; ?>
 	
 	<?php echo $form->hiddenField($comment, 'board_id', array('value'=>$board_id));?>
 	<?php echo $form->error($comment, 'board_id'); ?>

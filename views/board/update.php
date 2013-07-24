@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Board <?php echo $model->id; ?></h1>
+<h1>タイトル更新</h1>
 
 <?php echo $this->renderPartial('_form', array(
 		//'model'=>$model,

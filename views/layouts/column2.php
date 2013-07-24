@@ -8,6 +8,11 @@
 <div class="span-5 last">
 	<div id="sidebar">
 	<?php
+		if(!Yii::app()->user->isGuest)
+		{
+			$this->widget('usermenu');
+		}
+		
 		$this->beginWidget('zii.widgets.CPortlet', array(
 				'title'=>'メニュー',
 		));

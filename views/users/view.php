@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'ユーザー一覧', 'url'=>array('index')),
+	//array('label'=>'ユーザー一覧', 'url'=>array('index')),
 	array('label'=>'ユーザー新規登録', 'url'=>array('create')),
 	array('label'=>'ユーザー情報更新', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'ユーザー削除', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'本当に削除しますか？')),
@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Users #<?php echo $model->id; ?></h1>
+<h1>ユーザー情報詳細 #<?php echo $model->id; ?></h1>
 
 <?php 
 $admin = $model->admin ? '○' : '×';
