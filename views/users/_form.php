@@ -27,6 +27,12 @@
 		<?php echo $form->passwordField($model,'password',array('value' => '', 'size'=>40,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'password'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'password2'); ?>
+		<?php echo $form->passwordField($model,'password2',array('value' => '', 'size'=>40,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'password2'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>

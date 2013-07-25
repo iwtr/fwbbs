@@ -41,7 +41,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($comment,'contents'); ?>
-		<?php echo $form->textArea($comment,'contents',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($board,'contents',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($comment,'contents'); ?>
 	</div>
 	

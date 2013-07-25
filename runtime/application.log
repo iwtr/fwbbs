@@ -3046,3 +3046,1249 @@ in /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php (13)
 2013/07/24 16:53:50 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
 in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (90)
 in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/24 17:59:14 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (123)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 09:45:55 [error] [exception.CException] exception 'CException' with message 'プロパティ "CDetailView.htmlOptins" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('htmlOptins', Array)
+#1 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(UserMenu), 'zii.widgets.CDe...', Array)
+#2 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 /Users/iwagaya/Sites/fwbbs/protected/components/views/userMenu.php(17): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(130): require('/Users/iwagaya/...')
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', NULL, false)
+#6 /Users/iwagaya/Sites/yii/framework/web/widgets/CWidget.php(243): CBaseController->renderFile('/Users/iwagaya/...', NULL, false)
+#7 /Users/iwagaya/Sites/fwbbs/protected/components/usermenu.php(14): CWidget->render('userMenu')
+#8 /Users/iwagaya/Sites/yii/framework/zii/widgets/CPortlet.php(94): UserMenu->renderContent()
+#9 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(173): CPortlet->run()
+#10 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(13): CBaseController->widget('usermenu')
+#11 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#12 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#14 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(244): CController->render('index', Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionIndex()
+#16 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#25 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/index')
+#26 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#28 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/index
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/07/25 09:59:05 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (123)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 10:06:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'あなたはこのアクションを実行する権限がありません。' in /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#9 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:07:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'あなたはこのアクションを実行する権限がありません。' in /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#9 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:07:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'あなたはこのアクションを実行する権限がありません。' in /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#9 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:07:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:07:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:07:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:11:26 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(79): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:13:07 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(79): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:13:12 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(79): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:14:15 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(79): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:14:26 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(79): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:14:54 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(80): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:17:20 [error] [exception.CException] exception 'CException' with message 'CommentController はリクエストされたビュー "image" を見つけられません。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:878
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('image', NULL, true)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(80): CController->render('image')
+#2 [internal function]: CommentController->actionImage('130724_3351ef6b...')
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#15 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#17 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&image=130724_3351ef6b2c2d868.jpg
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:24:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&data%5Bid%5D=1&data%5Bboard_id%5D=1&data%5Bcomnum%5D=&data%5Buser_id%5D=1&data%5Bdel_key%5D=0000&data%5Bpen_name%5D=&data%5Bcontents%5D=tst&data%5Bimage%5D=130724_3351ef6b2c2d868.jpg&data%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:24:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&data%5Bid%5D=1&data%5Bboard_id%5D=1&data%5Bcomnum%5D=&data%5Buser_id%5D=1&data%5Bdel_key%5D=0000&data%5Bpen_name%5D=&data%5Bcontents%5D=tst&data%5Bimage%5D=130724_3351ef6b2c2d868.jpg&data%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:25:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&data%5Bid%5D=1&data%5Bboard_id%5D=1&data%5Bcomnum%5D=&data%5Buser_id%5D=1&data%5Bdel_key%5D=0000&data%5Bpen_name%5D=&data%5Bcontents%5D=tst&data%5Bimage%5D=130724_3351ef6b2c2d868.jpg&data%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:42:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&atr%5Bid%5D=1&atr%5Bboard_id%5D=1&atr%5Bcomnum%5D=&atr%5Buser_id%5D=1&atr%5Bdel_key%5D=0000&atr%5Bpen_name%5D=&atr%5Bcontents%5D=tst&atr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&atr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:44:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&atr%5Bid%5D=1&atr%5Bboard_id%5D=1&atr%5Bcomnum%5D=&atr%5Buser_id%5D=1&atr%5Bdel_key%5D=0000&atr%5Bpen_name%5D=&atr%5Bcontents%5D=tst&atr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&atr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:45:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&atr%5Bid%5D=1&atr%5Bboard_id%5D=1&atr%5Bcomnum%5D=&atr%5Buser_id%5D=1&atr%5Bdel_key%5D=0000&atr%5Bpen_name%5D=&atr%5Bcontents%5D=tst&atr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&atr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:45:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attributes%5Bid%5D=1&attributes%5Bboard_id%5D=1&attributes%5Bcomnum%5D=&attributes%5Buser_id%5D=1&attributes%5Bdel_key%5D=0000&attributes%5Bpen_name%5D=&attributes%5Bcontents%5D=tst&attributes%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attributes%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:46:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attributes%5Bid%5D=1&attributes%5Bboard_id%5D=1&attributes%5Bcomnum%5D=&attributes%5Buser_id%5D=1&attributes%5Bdel_key%5D=0000&attributes%5Bpen_name%5D=&attributes%5Bcontents%5D=tst&attributes%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attributes%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:46:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:47:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:47:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:49:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:51:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 10:54:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message '無効なリクエストです。' in /Users/iwagaya/Sites/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('image')
+#9 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/image')
+#10 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#12 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/image&attr%5Bid%5D=1&attr%5Bboard_id%5D=1&attr%5Bcomnum%5D=&attr%5Buser_id%5D=1&attr%5Bdel_key%5D=0000&attr%5Bpen_name%5D=&attr%5Bcontents%5D=tst&attr%5Bimage%5D=130724_3351ef6b2c2d868.jpg&attr%5Bcreated_at%5D=2013-07-24+14%3A50%3A36
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 11:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエストされたページは存在しません。' in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php:278
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(75): BoardController->loadBoard()
+#1 [internal function]: BoardController->actionView('')
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/view&id=
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=comment/image&board=1&title=title&image=130724_3351ef6b2c2d868.jpg
+---
+2013/07/25 11:15:58 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 11:51:12 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (137)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 11:59:48 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (137)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:19:29 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (90)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:23:53 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:23:53 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (/Users/iwagaya/Sites/yii/framework/web/CHttpSession.php:185)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/auth/CWebUser.php(227): WebUser->changeIdentity()
+#1 /Users/iwagaya/Sites/fwbbs/protected/models/LoginForm.php(74): WebUser->login()
+#2 /Users/iwagaya/Sites/fwbbs/protected/models/Users.php(135): LoginForm->login()
+#3 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(1043): Users->afterSave()
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(795): Users->insert()
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(94): Users->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+in /Users/iwagaya/Sites/fwbbs/protected/models/LoginForm.php (74)
+in /Users/iwagaya/Sites/fwbbs/protected/models/Users.php (135)
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (94)
+2013/07/25 13:29:29 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:30:21 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:30:21 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.　password2" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('???password2')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('???password2')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Users), '???password2')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Users), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(94): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 13:32:01 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:32:01 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.　password2" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('???password2')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('???password2')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Users), '???password2')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Users), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(94): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 13:32:21 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:32:21 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.　" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('???')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('???')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Users), '???')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Users), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(94): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 13:32:39 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:33:50 [warning] [application] "Users" の安全でない属性"password2"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (93)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 13:43:43 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.password2" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(159): CComponent->__set('password2', 'a')
+#1 /Users/iwagaya/Sites/yii/framework/base/CModel.php(471): CActiveRecord->__set('password2', 'a')
+#2 /Users/iwagaya/Sites/yii/framework/base/CComponent.php(152): CModel->setAttributes(Array)
+#3 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(159): CComponent->__set('attributes', Array)
+#4 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(93): CActiveRecord->__set('attributes', Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#16 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 13:47:00 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.password2" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('password2')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('password2')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Users), 'password2')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Users), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(91): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 13:47:27 [error] [exception.CException] exception 'CException' with message 'プロパティ "Users.password2" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('password2')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('password2')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Users), 'password2')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Users), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(91): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/create
+---
+2013/07/25 14:07:16 [error] [php] Missing argument 2 for CModel::addError(), called in /Users/iwagaya/Sites/fwbbs/protected/models/Users.php on line 130 and defined (/Users/iwagaya/Sites/yii/framework/base/CModel.php:380)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(795): Users->insert()
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(91): Users->save()
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#11 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/create
+in /Users/iwagaya/Sites/fwbbs/protected/models/Users.php (130)
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php (91)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:14:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエストされたページは存在しません。' in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php:184
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(59): UsersController->loadModel()
+#1 [internal function]: UsersController->checkUpdateUsers(Object(WebUser), Object(CAccessRule))
+#2 /Users/iwagaya/Sites/yii/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(384): CComponent->evaluateExpression(Array, Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(280): CAccessRule->isExpressionMatched(Object(WebUser))
+#5 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(135): CAccessRule->isUserAllowed(Object(WebUser), Object(UsersController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view/id/2...')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/view/id/21
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/07/25 14:14:30 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (123)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:20:19 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:32:45 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:33:04 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:34:02 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:34:19 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:34:19 [error] [exception.CException] exception 'CException' with message 'プロパティ "Board.content" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('content')
+#1 /Users/iwagaya/Sites/fwbbs/protected/models/Board.php(121): CActiveRecord->__get('content')
+#2 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(1017): Board->beforeSave()
+#3 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#4 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(122): CActiveRecord->save()
+#5 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionCreate()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/create')
+#16 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/create
+---
+2013/07/25 14:34:45 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (114)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:36:25 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:36:57 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:37:42 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:37:47 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:39:38 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:39:38 [error] [exception.CException] exception 'CException' with message 'プロパティ "Board.contents" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('contents')
+#1 /Users/iwagaya/Sites/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('contents')
+#2 /Users/iwagaya/Sites/yii/framework/web/helpers/CHtml.php(1417): CHtml::resolveValue(Object(Board), 'contents')
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/CActiveForm.php(702): CHtml::activeTextArea(Object(Board), 'contents', Array)
+#4 /Users/iwagaya/Sites/fwbbs/protected/views/board/_form.php(44): CActiveForm->textArea(Object(Board), 'contents', Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#6 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#8 /Users/iwagaya/Sites/fwbbs/protected/views/board/create.php(23): CController->renderPartial('_form', Array)
+#9 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#10 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(136): CController->render('create', Array)
+#14 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionCreate()
+#15 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/create')
+#25 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#27 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/create
+---
+2013/07/25 14:40:22 [warning] [application] "Board" の安全でない属性"contents"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (113)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:40:22 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:40:22 [error] [exception.CException] exception 'CException' with message 'プロパティ "Board.content" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('content')
+#1 /Users/iwagaya/Sites/yii/framework/validators/CRequiredValidator.php(51): CActiveRecord->__get('content')
+#2 /Users/iwagaya/Sites/yii/framework/validators/CValidator.php(213): CRequiredValidator->validateAttribute(Object(Board), 'content')
+#3 /Users/iwagaya/Sites/yii/framework/base/CModel.php(159): CValidator->validate(Object(Board), NULL)
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CModel->validate(NULL)
+#5 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(123): CActiveRecord->save()
+#6 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionCreate()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/create')
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#19 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/create
+---
+2013/07/25 14:40:53 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:42:15 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:42:58 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:44:20 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:44:44 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:45:11 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (115)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:50:55 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (124)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 14:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエストされたページは存在しません。' in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php:184
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(59): UsersController->loadModel()
+#1 [internal function]: UsersController->checkUpdateUsers(Object(WebUser), Object(CAccessRule))
+#2 /Users/iwagaya/Sites/yii/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(384): CComponent->evaluateExpression(Array, Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(280): CAccessRule->isExpressionMatched(Object(WebUser))
+#5 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(135): CAccessRule->isUserAllowed(Object(WebUser), Object(UsersController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view/id/2...')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/view/id/21
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/07/25 14:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエストされたページは存在しません。' in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php:184
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(59): UsersController->loadModel()
+#1 [internal function]: UsersController->checkUpdateUsers(Object(WebUser), Object(CAccessRule))
+#2 /Users/iwagaya/Sites/yii/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(384): CComponent->evaluateExpression(Array, Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(280): CAccessRule->isExpressionMatched(Object(WebUser))
+#5 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(135): CAccessRule->isUserAllowed(Object(WebUser), Object(UsersController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view/id/2...')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/view/id/21
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/07/25 14:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエストされたページは存在しません。' in /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php:184
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/UsersController.php(59): UsersController->loadModel()
+#1 [internal function]: UsersController->checkUpdateUsers(Object(WebUser), Object(CAccessRule))
+#2 /Users/iwagaya/Sites/yii/framework/base/CComponent.php(611): call_user_func_array(Array, Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(384): CComponent->evaluateExpression(Array, Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(280): CAccessRule->isExpressionMatched(Object(WebUser))
+#5 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(135): CAccessRule->isUserAllowed(Object(WebUser), Object(UsersController), Object(CInlineAction), '127.0.0.1', 'GET')
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view/id/2...')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/view/id/20
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/07/25 15:10:21 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:12:56 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:22:19 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:25:22 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:27:28 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:28:13 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:31:11 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:31:11 [error] [exception.CException] exception 'CException' with message 'CommentController やそのビヘイビアには "addError" という名前のメソッドやクロージャはありません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('addError', Array)
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(106): CommentController->addError('contents', '???????????????...')
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#13 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#15 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 15:31:29 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:36:08 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:42:06 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:46:06 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:46:20 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:48:08 [warning] [application] "Comment" の安全でない属性"contents"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:48:08 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 15:51:20 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:01:43 [error] [exception.CException] exception 'CException' with message 'CommentController やそのビヘイビアには "validate" という名前のメソッドやクロージャはありません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('validate', Array)
+#1 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CommentController->validate(NULL)
+#2 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(104): CActiveRecord->save()
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 16:13:17 [error] [exception.CException] exception 'CException' with message 'CommentController やそのビヘイビアには "validate" という名前のメソッドやクロージャはありません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 [internal function]: CComponent->__call('validate', Array)
+#1 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(794): CommentController->validate(NULL)
+#2 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(104): CActiveRecord->save()
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionCreate()
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/create')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/create
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/view&id=1
+---
+2013/07/25 16:14:28 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:14:46 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php:228
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(128): CommentController->loadModel('')
+#1 [internal function]: CommentController->actionUpdate('')
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/update&id=
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=comment/create
+---
+2013/07/25 16:18:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php:228
+Stack trace:
+#0 /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php(128): CommentController->loadModel('')
+#1 [internal function]: CommentController->actionUpdate('')
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=comment/update&id=
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=comment/create
+---
+2013/07/25 16:37:29 [error] [exception.CException] exception 'CException' with message 'Board やそのビヘイビアには "addComment" という名前のメソッドやクロージャはありません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('addComment', Array)
+#1 [internal function]: CActiveRecord->__call('addComment', Array)
+#2 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(77): Board->addComment()
+#3 [internal function]: BoardController->actionView('1')
+#4 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#5 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view')
+#16 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#18 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/view&id=1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=board/index
+---
+2013/07/25 16:47:12 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:47:20 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/CommentController.php (100)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:48:04 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (82)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:48:42 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (82)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:51:06 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (82)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:51:13 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (82)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/25 16:53:58 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (82)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)

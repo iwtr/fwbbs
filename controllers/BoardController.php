@@ -74,7 +74,18 @@ class BoardController extends Controller
 	{
 		$board = $this->loadBoard();
 		
+		
 		$comment = new Comment;
+		
+		if(isset($_POST['Comment']))
+		{
+			$comment->attributes = $_POST['Comment'];
+			
+			if($comment->save())
+			{
+				$this->redirect(array('board/view','id'=>$comment->board_id));
+			}
+		}
 		
 		$dataProvider=new CActiveDataProvider('Comment' ,array(
 				'criteria' => array(
@@ -111,6 +122,7 @@ class BoardController extends Controller
 			//$pboard = mysqli_real_escape_string(Yii::app()->db, trim($_POST['Board']));
 			//$pcomment = mysqli_real_escape_string(Yii::app()->db, trim($_POST['Comment']));
 			$board->attributes = $_POST['Board'];
+			$comment->contents = $board->contents;
 			
 			if(empty($board->del_key))
 			{
@@ -154,6 +166,7 @@ class BoardController extends Controller
 							|| $board->del_key === $_POST['Board']['del_key']
 							|| isAdmin())
 			{
+				$board->contents = 'foo'; //入力必須のため代入 保存されるデータとは関係なし
 				$board->attributes=$_POST['Board'];
 				if($board->save())
 					$this->redirect(array('view','id'=>$board->id));

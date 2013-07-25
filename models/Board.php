@@ -15,6 +15,7 @@
  */
 class Board extends CActiveRecord
 {
+	public $contents;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -41,7 +42,7 @@ class Board extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
+			array('title, contents', 'required'),
 			array('title', 'length', 'max'=>128),
 			array('del_key', 'length', 'max'=>4),
 			array('last_updated', 'safe'),
@@ -77,7 +78,8 @@ class Board extends CActiveRecord
 			'del_key' => '削除キー',
 			'created_at' => '作成日時',
 			'last_updated' => '最終更新日時',
-			'commentCount' => 'コメント数'
+			'commentCount' => 'コメント数',
+			'contents' => '投稿内容'
 		);
 	}
 
@@ -94,7 +96,7 @@ class Board extends CActiveRecord
 		
 		if($this->user_id != NULL)
 		{
-			//現在$this->user_idには検索ユーザー名が入っている
+			//現在$this->user_idには検索したいユーザー名が入っている
 			$author = Users::Model()->find('name=:name', array(':name' => $this->user_id));
 			//それを正しい値に直す
 			$this->user_id = $author->id;
@@ -112,6 +114,7 @@ class Board extends CActiveRecord
 		));
 	}
 	
+
 	protected function beforeSave()
 	{
 		if(parent::beforeSave())
@@ -119,9 +122,8 @@ class Board extends CActiveRecord
 			if($this->isNewRecord)
 			{
 				$this->user_id = !Yii::app()->user->isGuest ? Yii::app()->user->id : NULL;
-				$this->last_updated = new CDbExpression('NOW()');
-				
 			}
+			$this->last_updated = new CDbExpression('NOW()');
 			return true;
 		}
 		return false;

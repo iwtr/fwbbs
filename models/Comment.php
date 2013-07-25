@@ -46,7 +46,7 @@ class Comment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('board_id, contents', 'required'),
+			array('contents', 'required'),
 			array('board_id, user_id', 'numerical', 'integerOnly'=>true),
 			array('del_key', 'length', 'max'=>4),
 			array('pen_name', 'length', 'max'=>11),
@@ -143,6 +143,7 @@ class Comment extends CActiveRecord
 			}
 			return true;
 		}
+		echo 'aaa';
 		return false;
 	}
 	

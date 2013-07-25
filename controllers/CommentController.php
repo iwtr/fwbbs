@@ -28,7 +28,7 @@ class CommentController extends Controller
 	{
 		return array(
 				array('allow',
-					'actions'=>array('view', 'create', 'update', 'delete'),
+					'actions'=>array('view', 'image', 'create', 'update', 'delete'),
 					'users' => array('*'),
 				),
 				/*
@@ -73,6 +73,16 @@ class CommentController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+	
+	public function actionImage($board, $title, $image)
+	{
+		$this->layout = '';
+		$this->render('image', array(
+				'board' => $board,
+				'title' => $title,
+				'image' => $image
+		));
+	}
 
 	/**
 	 * Creates a new model.
@@ -80,6 +90,8 @@ class CommentController extends Controller
 	 */
 	public function actionCreate()
 	{
+		//処理をBoardController側に移動
+		/*
 		$comment=new Comment;
 		
 		// Uncomment the following line if AJAX validation is needed
@@ -91,13 +103,15 @@ class CommentController extends Controller
 			
 			//$info = pathinfo($_FILES['Comment']['name']['image']);
 			//testPrint($info['extension']);
-			
 			if($comment->save())
 			{
-				$this->redirect(array('board/view','id'=>$comment->board_id));
+				//$comment->addError('contents', '投稿内容は必須です。');
+				
 			}
+			//$this->redirect(array('board/view','id'=>$comment->board_id));
+			
 		}
-		
+		*/
 		
 		/*
 		$this->render('create',array(

@@ -19,4 +19,6 @@ $this->menu=array(
 
 <h1>コメント更新 #<?php echo $model->id; ?></h1>
 
+
+
 <?php echo $this->renderPartial('_form', array('comment'=>$model)); ?>

@@ -11,7 +11,7 @@ $id = $_GET['id'];
 $action = ($_GET['r']=='board/view') ? array('comment/create') : array("comment/update&id=$id");
 
 $form=$this->beginWidget('CActiveForm', array(
-		'action' => $action,
+		//'action' => $action,
 		'id'=>'comment-form',
 		'htmlOptions' => array('enctype' => 'multipart/form-data'),
 		'enableAjaxValidation'=>false,

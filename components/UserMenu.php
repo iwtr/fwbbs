@@ -5,7 +5,7 @@ class UserMenu extends CPortlet
 {
 	public function init()
 	{
-		$this->title='ユーザー';
+		$this->title='ユーザー情報';
 		parent::init();
 	}
 	

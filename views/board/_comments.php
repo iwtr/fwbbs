@@ -1,27 +1,24 @@
 <?php //foreach($datas as $data): ?>
 <div class="comment">
 
-	<?php
-	//testPrint($data->attributes);
-	?>
-
 	<div class="name">
 		<?php echo CHtml::encode(cname($data)); ?>
-	</div>
-	
-	<div class="time">
-		<?php echo CHtml::encode($data->created_at); ?>
+		<div class="time">
+			<?php echo CHtml::encode($data->created_at); ?>
+		</div>
 	</div>
 	
 	<div class="content">
 		<?php echo nl2br(CHtml::encode($data->contents)); ?>
 	</div>
 	
-	<?php if($data->image != NULL): ?>
 	<div class="image">
-		<?php echo CHtml::image('/~iwagaya/fwbbs/images/'.$data->image,'#', array('style' => "max-height:150px; max-width:200px;")); ?>
+		<?php if($data->image != NULL): ?>
+		<?php echo CHtml::link(CHtml::image('/~iwagaya/fwbbs/images/'.$data->image,'#', array('style' => "max-height:100px; max-width:150px;")), array('/comment/image', 'board' => $data->board_id, 'title' => $data->board->title, 'image' => $data->image)); ?>
+		<?php endif; ?>
 	</div>
-	<?php endif; ?>
+	
+	<div class="clear"></div>
 	
 	<div style="text-align: right;">
 		<?php echo CHtml::link('更新', array('comment/update', 'id'=>$data->id)); ?>

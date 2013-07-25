@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Board', 'url'=>array('index')),
-	array('label'=>'Create Board', 'url'=>array('create')),
-	array('label'=>'View Board', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Board', 'url'=>array('admin')),
+	array('label'=>'トピック一覧', 'url'=>array('index')),
+	array('label'=>'新規トピック作成', 'url'=>array('create')),
+	//array('label'=>'View Board', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'管理メニュー', 'url'=>array('admin'), 'visible' => isAdmin()),
 );
 ?>
 

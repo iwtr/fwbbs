@@ -34,43 +34,7 @@ $this->menu=array(
 
 <h1><?php echo $board->title; ?></h1>
 
-<?php
-/*
-$this->widget('zii.widgets.CDetailView', array(
-	'data'=>$board,
-	'attributes'=>array(
-		'id',
-		'title',
-		'del_key',
-		'created_at',
-		'last_updated',
-	),
-));
-*/
-/*
-Yii::app()->user->testPrint($board->comments);
-$this->widget('zii.widgets.CDetailView', array(
-	'data'=>$board->comments,
-	'attributes'=>array(
-			'id',
-			'pen_name',
-			'contents',
-			'image',
-	),
-));
-*/
-
-?>
-
 <div id="comments">
-	<?php
-	/*
-	$this->renderPartial('_comments',array(
-			'comments' => $board->comments,
-	));
-	*/
-	?>
-	
 	<?php
 	
 	//コメントのページング
@@ -80,13 +44,12 @@ $this->widget('zii.widgets.CDetailView', array(
 	));
 	
 	?>
-	
-	<?php
-	//$cc = new CommentController;
-	$this->renderPartial('/comment/_form', array(
-			'comment' => $comment,
-			'board_id' => $board->id,
-	));
-	?>
 </div>
+
+<?php
+$this->renderPartial('/comment/_form', array(
+		'comment' => $comment,
+		'board_id' => $board->id,
+));
+?>
 

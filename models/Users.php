@@ -16,6 +16,7 @@
  */
 class Users extends CActiveRecord
 {
+	public $password2;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -43,9 +44,11 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('login_id, password, name, address', 'required'),
+			array('login_id, password, password2, name, address', 'required'),
+			array('address', 'email'),
 			array('admin', 'numerical', 'integerOnly'=>true),
 			array('login_id, password', 'length', 'max'=>50),
+			array('password2', 'compare', 'compareAttribute'=>'password'),
 			array('name', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -75,6 +78,7 @@ class Users extends CActiveRecord
 			'id' => 'ID',
 			'login_id' => 'id',
 			'password' => 'パスワード',
+			'password2' => 'パスワード(確認)',
 			'name' => '名前',
 			'address' => 'メールアドレス',
 			'admin' => 'Admin',

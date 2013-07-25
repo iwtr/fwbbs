@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1>Create Comment</h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('comment'=>$model)); ?>
