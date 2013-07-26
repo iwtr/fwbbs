@@ -16,7 +16,7 @@ function cname($item)
 {
 	if(!empty($item->user->name))
 	{
-		$name = $item->user->name;
+		$name = '【'.$item->user->name.'】';
 	}
 	else
 	{

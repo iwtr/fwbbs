@@ -66,6 +66,8 @@ class SiteController extends Controller
 				'data' => $dataProvider,
 		));
 	}
+	
+	
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -84,6 +86,7 @@ class SiteController extends Controller
 	/**
 	 * Displays the contact page
 	 */
+	/*
 	public function actionContact()
 	{
 		$model=new ContactForm;
@@ -106,7 +109,8 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
-
+	*/
+	
 	/**
 	 * Displays the login page
 	 */
@@ -172,13 +176,15 @@ class SiteController extends Controller
 		$task->addChild('deleteComment');
 		
 		$rule = 'return Yii::app()->user->id == $params["board"]->user_id;';
-		$task = $auth->createTask('updateOwnBoard', 'delete a board by author himself', $rule);
+		$task = $auth->createTask('updateOwnBoard', 'update a board by author himself', $rule);
 		$task->addChild('updateBoard');
 		$task = $auth->createTask('deleteOwnBoard', 'delete a board by author himself', $rule);
 		$task->addChild('deleteBoard');
 		
 		$rule = 'return Yii::app()->user->id == $params["users"]->id;';
-		$task = $auth->createTask('updateOwnUsers', 'delete a users by author himself', $rule);
+		$task = $auth->createTask('readOwnUsers', 'read a users by author himself', $rule);
+		$task->addChild('readUsers');
+		$task = $auth->createTask('updateOwnUsers', 'update a users by author himself', $rule);
 		$task->addChild('updateUsers');
 		$task = $auth->createTask('deleteOwnUsers', 'delete a users by author himself', $rule);
 		$task->addChild('deleteUsers');
@@ -191,6 +197,7 @@ class SiteController extends Controller
 		$role->addChild('deleteOwnComment');
 		$role->addChild('updateOwnBoard');
 		$role->addChild('deleteOwnBoard');
+		$role->addChild('readOwnUsers');
 		$role->addChild('updateOwnUsers');
 		$role->addChild('deleteOwnUsers');
 		

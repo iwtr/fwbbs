@@ -11,4 +11,8 @@ $this->breadcrumbs=array(
 
 <h1>コメント削除 #<?php echo $model->id; ?></h1>
 
-<?php echo $this->renderPartial('_delete', array('model'=>$model)); ?>
+<?php
+echo $this->renderPartial('/board/_comments', array('data' => $model));
+
+echo $this->renderPartial('_delete', array('model' => $model));
+?>

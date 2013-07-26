@@ -6,8 +6,8 @@ return array(
 		// this is used in error pages
 		'adminEmail'=>'iwagaya@staff-info.co.jp',
 		// number of displayed per page
-		'boardsPerPage' => 6,
-		'commentsPerPage' => 10,
+		'boardPerPage' => 6,
+		'commentPerPage' => 10,
 		// maximum number of comments that can be displayed in recent comments portlet
 		'recentCommentCount'=>10,
 		// maximum number of tags that can be displayed in tag cloud portlet

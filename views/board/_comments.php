@@ -1,6 +1,6 @@
 <?php //foreach($datas as $data): ?>
 <div class="comment">
-
+	
 	<div class="name">
 		<?php echo CHtml::encode(cname($data)); ?>
 		<div class="time">

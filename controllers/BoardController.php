@@ -74,7 +74,6 @@ class BoardController extends Controller
 	{
 		$board = $this->loadBoard();
 		
-		
 		$comment = new Comment;
 		
 		if(isset($_POST['Comment']))
@@ -90,9 +89,10 @@ class BoardController extends Controller
 		$dataProvider=new CActiveDataProvider('Comment' ,array(
 				'criteria' => array(
 						'condition' => "board_id=$board->id",
+						'order' => 'created_at DESC',
 				),
 				'pagination' => array(
-						'pageSize' => Yii::app()->params['commentsPerPage'],
+						'pageSize' => Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id))->commentPerPage,
 				),
 		));
 		
@@ -173,10 +173,10 @@ class BoardController extends Controller
 			}
 			else
 			{
-				//del_key不一致
+				$board->addError('del_key', '削除キーが間違っています。');
 			}
 		}
-
+		
 		$this->render('update',array(
 			'model'=>$board,
 		));
@@ -192,17 +192,41 @@ class BoardController extends Controller
 	{
 		$board = $this->loadBoard($id);
 		
-		if(Yii::app()->user->checkAccess('deleteOwnBoard', array('board' => $board))
-						|| $board->del_key === $_POST['Board']['del_key']
-						|| isAdmin())
+		
+		if(Yii::app()->user->checkAccess('deleteOwnBoard', array('board' => $board)) || isAdmin())
 		{
+			//内包する画像の削除
+			foreach($board->comments as $comment)
+			{
+				if($comment->image != NULL)
+				{
+					unlink("images/$comment->image");
+				}
+			}
 			$board->delete();
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 		}
-		else
+		else if(isset($_POST['Board']['del_key']))
 		{
-			//del_key不一致
+			if($board->del_key === $_POST['Board']['del_key'])
+			{
+				//内包する画像の削除
+				foreach($board->comments as $comment)
+				{
+					if($comment->image != NULL)
+					{
+						unlink("images/$comment->image");
+					}
+				}
+				$board->delete();
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+			}
+			else
+			{
+				$board->addError('del_key', '削除キーが間違っています。');
+			}
 		}
+		
 		
 		$this->render('delete', array('board'=>$board,));
 		
@@ -231,6 +255,7 @@ class BoardController extends Controller
 	 */
 	public function actionIndex()
 	{
+		Settings::model();
 		$board=new Board('search');
 		$board->unsetAttributes();
 		
@@ -239,7 +264,7 @@ class BoardController extends Controller
 			$board->attributes = $_GET['Board'];
 		}
 		$dataProvider = $board->search();
-		$dataProvider->pagination->pageSize = Yii::app()->params['boardsPerPage'];
+		$dataProvider->pagination->pageSize = Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id))->boardPerPage;
 		/*
 		else
 		{

@@ -144,9 +144,10 @@ class CommentController extends Controller
 			}
 			else
 			{
-				//del_key不一致
+				$model->addError('del_key', '削除キーが間違っています。');
 			}
 		}
+		
 		
 		$this->render('update',array(
 			'model'=>$model,
@@ -163,21 +164,37 @@ class CommentController extends Controller
 	{
 		$model = $this->loadModel($id);
 		
-		if(Yii::app()->user->checkAccess('deleteOwnComment', array('comment' => $model))
-						|| $model->del_key === $_POST['Comment']['del_key']
-						|| isAdmin())
+		if(Yii::app()->user->checkAccess('deleteOwnComment', array('comment' => $model)) || isAdmin())
 		{
 			if($model->image != NULL)
+			{
 				unlink("images/$model->image");
+			}
 			$model->delete();
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('/board/view','id'=>$model->board->id));
 		}
-		else
+		else if(isset($_POST['Comment']['del_key']))
 		{
-			//del_key不一致
+			if($model->del_key === $_POST['Comment']['del_key'])
+			{
+				if($model->image != NULL)
+				{
+					unlink("images/$model->image");
+				}
+				$model->delete();
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('/board/view','id'=>$model->board->id));
+			}
+			else
+			{
+				$model->addError('del_key', '削除キーが間違っています。');
+			}
 		}
 		
-		$this->render('delete', array('model' => $model));
+		
+		$this->render('delete', array(
+				'model' => $model,
+				
+		));
 		
 		/*
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

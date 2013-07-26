@@ -33,7 +33,7 @@ class UsersController extends Controller
 			),
 			array('allow',
 					'actions' => array('view'),
-					'expression' => array($this, 'checkUpdateUsers'),
+					'expression' => array($this, 'checkReadUsers'),
 			),
 			array('allow',
 					'actions' => array('update'),
@@ -53,7 +53,10 @@ class UsersController extends Controller
 			),
 		);
 	}
-	
+	protected function checkReadUsers()
+	{
+		return Yii::app()->user->checkAccess('readOwnUsers', array('users' => $this->loadModel()));
+	}
 	protected function checkUpdateUsers()
 	{
 		return Yii::app()->user->checkAccess('updateOwnUsers', array('users' => $this->loadModel()));
@@ -69,6 +72,8 @@ class UsersController extends Controller
 	 */
 	public function actionView()
 	{
+		//$this->layout = '';
+		
 		$this->render('view',array(
 			'model'=>$this->loadModel(),
 		));
@@ -81,6 +86,7 @@ class UsersController extends Controller
 	public function actionCreate()
 	{
 		$model=new Users;
+		$settings = new Settings;
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -90,6 +96,8 @@ class UsersController extends Controller
 			$model->attributes=$_POST['Users'];
 			if($model->save())
 			{
+				$settings->user_id = $model->id;
+				$settings->save();
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
 		}
@@ -130,11 +138,26 @@ class UsersController extends Controller
 	 */
 	public function actionDelete()
 	{
-		$this->loadModel()->delete();
 		
-		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->homeUrl);
-
+		$model = $this->loadModel();
+		Settings::model()->find('user_id=:user_id', array(':user_id' => $model->id))->delete();
+		$model->delete();
+		
+		if(isAdmin())
+		{
+			if($_GET['id'] == Yii::app()->user->id)
+			{
+				Yii::app()->user->logout();
+				$this->redirect(Yii::app()->homeUrl);
+			}
+			$this->redirect(array('admin'));
+		}
+		else
+		{
+			Yii::app()->user->logout();
+			$this->redirect(Yii::app()->homeUrl);
+		}
+		
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		/*
 		if(!isset($_GET['ajax']))

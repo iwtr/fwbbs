@@ -12,9 +12,9 @@
 		{
 			$this->widget('usermenu');
 		}
-		
+		$title = 'メニュー';
 		$this->beginWidget('zii.widgets.CPortlet', array(
-				'title'=>'メニュー',
+				'title' => $title,
 		));
 		$this->widget('zii.widgets.CMenu', array(
 				'items'=>$this->menu,

@@ -51,10 +51,15 @@
 							'visible' => isAdmin(),
 					),
 					array(
+							'label' => '設定',
+							'url' => array('/settings/index'),
+							'visible' => !Yii::app()->user->isGuest,
+					),
+					/*array(
 							'label'=>'権限設定の読み込み',
 							'url'=>array('/site/roleset'),
-							'visible' => Yii::app()->user->getIsAdmin(),
-					),
+							'visible' => isAdmin(),
+					),*/
 					array(
 							'label'=>'ログイン',
 							'url'=>array('/site/login'),
@@ -67,14 +72,14 @@
 					),
 					array(
 							'label' => 'ユーザー登録',
-							'url' => array('users/create'),
+							'url' => array('/users/create'),
 							'visible' => Yii::app()->user->isGuest,
 					),
 					array(
 							'label' => 'ユーザー情報',
-							'url' => array("users/view/id/$user_id"),
+							'url' => array("/users/view/id/$user_id"),
 							'visible' => !Yii::app()->user->isGuest,
-					),
+					)
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				//array('label'=>'Contact', 'url'=>array('/site/contact')),
 			),

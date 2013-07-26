@@ -143,7 +143,6 @@ class Comment extends CActiveRecord
 			}
 			return true;
 		}
-		echo 'aaa';
 		return false;
 	}
 	
