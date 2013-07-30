@@ -10,7 +10,8 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-		array('label' => 'ページ毎表示件数変更', 'linkOptions' => array('style' => 'font-weight: bold;')),		
+		array('label' => 'ページ毎表示件数変更', 'linkOptions' => array('style' => 'font-weight: bold; font-size: 13px;')),
+		array('label' => 'NGワード設定', 'url' => array('setngwords'))
 );
 
 ?>
@@ -19,6 +20,6 @@ $this->menu = array(
 
 <?php
 
-$this->renderPartial('_form', array(
+$this->renderPartial('_pagerform', array(
 		'model' => $model
 ));

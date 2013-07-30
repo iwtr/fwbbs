@@ -16,7 +16,7 @@ function cname($item)
 {
 	if(!empty($item->user->name))
 	{
-		$name = '【'.$item->user->name.'】';
+		$name = '['.$item->user->name.']';
 	}
 	else
 	{
@@ -30,6 +30,18 @@ function cname($item)
 		}
 	}
 	return $name;
+}
+
+function hide_ngword($item)
+{
+	$ngwords = NGWords::model()->findAll();
+	
+	foreach ($ngwords as $ngword)
+	{
+		$item = str_replace($ngword->attributes, '<span style="color:red">***</span>', $item);
+	}
+	
+	return $item;
 }
 
 ?>

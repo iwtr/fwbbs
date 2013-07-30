@@ -123,6 +123,7 @@ class BoardController extends Controller
 			//$pcomment = mysqli_real_escape_string(Yii::app()->db, trim($_POST['Comment']));
 			$board->attributes = $_POST['Board'];
 			$comment->contents = $board->contents;
+			$comment->pen_name = $board->pen_name;
 			
 			if(empty($board->del_key))
 			{

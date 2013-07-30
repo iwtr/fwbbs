@@ -20,12 +20,14 @@ $form=$this->beginWidget('CActiveForm', array(
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 	
 	<?php echo $form->errorSummary($comment); ?>
-
-	<div class="row" style="visibility:<?php echo Yii::app()->user->isGuest ? 'visible':'hidden'; ?>;">
+	
+	<?php if(Yii::app()->user->isGuest) : ?>
+	<div class="row">
 		<?php echo $form->labelEx($comment,'pen_name'); ?>
 		<?php echo $form->textField($comment,'pen_name',array('size'=>11,'maxlength'=>11)); ?>
 		<?php echo $form->error($comment,'pen_name'); ?>
 	</div>
+	<?php endif; ?>
 	
 	<div class="row">
 		<?php echo $form->labelEx($comment,'contents'); ?>

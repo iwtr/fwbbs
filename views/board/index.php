@@ -2,6 +2,8 @@
 /* @var $this BoardController */
 /* @var $dataProvider CActiveDataProvider */
 
+Yii::app()->clientScript->registerScript('sform',
+				"$('#search').click(function(){ $('.search-form').slideToggle('slow');}).next().hide();");
 $this->breadcrumbs=array(
 	'トピック一覧',
 );
@@ -14,8 +16,9 @@ $this->menu=array(
 ?>
 
 <h1>トピック一覧</h1>
-<?php //echo CHtml::link('search','#',array('class'=>'search-button')). '<br>'; ?>
-<div class="search-form" style="display: inline-block;">
+
+<span id="search" style="color: blue; text-decoration: underline;">検索フォーム</span>
+<div class="search-form" style="width: 400px;">
 	<h3>検索フォーム</h3>
 	<?php
 	$this->renderPartial('_search',array(

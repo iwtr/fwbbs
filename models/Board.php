@@ -15,6 +15,7 @@
  */
 class Board extends CActiveRecord
 {
+	public $pen_name;
 	public $contents;
 	/**
 	 * Returns the static model of the specified AR class.
@@ -45,6 +46,8 @@ class Board extends CActiveRecord
 			array('title, contents', 'required'),
 			array('title', 'length', 'max'=>128),
 			array('del_key', 'length', 'max'=>4),
+			array('pen_name', 'match', 'pattern' => '/^[^¥[].*[^¥]]?$/',//[名前]のパターンを除外
+					'message' => '名前の両端に[]は使用できません'),
 			array('last_updated', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -79,7 +82,8 @@ class Board extends CActiveRecord
 			'created_at' => '作成日時',
 			'last_updated' => '最終更新日時',
 			'commentCount' => 'コメント数',
-			'contents' => '投稿内容'
+			'contents' => '投稿内容',
+			'pen_name' => '名前'
 		);
 	}
 

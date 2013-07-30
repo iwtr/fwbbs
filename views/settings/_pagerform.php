@@ -9,7 +9,7 @@
 <div class="form">
 	<?php
 	$form = $this->beginWidget('CActiveForm', array(
-			'id' => 'setting-form',
+			'id' => 'pager-form',
 			'enableAjaxValidation'=>false,
 	));
 	

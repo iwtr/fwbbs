@@ -50,6 +50,8 @@ class Comment extends CActiveRecord
 			array('board_id, user_id', 'numerical', 'integerOnly'=>true),
 			array('del_key', 'length', 'max'=>4),
 			array('pen_name', 'length', 'max'=>11),
+			array('pen_name', 'match', 'pattern' => '/^[^¥[].*[^¥]]?$/',//[名前]のパターンを除外
+					'message' => '名前の両端に[]は使用できません'),
 			array('image', 'length', 'max'=>128),
 			array('image', 'unique'),
 			array('image', 'file', 'types' => 'jpg,jpeg,gif,png,pjpeg', 'maxSize' => 1000000, 'allowEmpty' => true),

@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	//array('label'=>'ユーザー一覧', 'url'=>array('index')),
-	array('label'=>'ユーザー新規登録', 'url'=>array('create')),
+	//array('label'=>'ユーザー新規登録', 'url'=>array('create')),
 	array('label'=>'ユーザー情報更新', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'ユーザー削除', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'本当に削除しますか？')),
 	array('label'=>'管理メニュー', 'url'=>array('admin')),
@@ -25,7 +25,7 @@ $this->widget('zii.widgets.CDetailView', array(
 	'attributes'=>array(
 		'id',
 		'login_id',
-		'password',
+		//'password',
 		'name',
 		'address',
 		//'admin',
@@ -34,4 +34,12 @@ $this->widget('zii.widgets.CDetailView', array(
 				'value' => "$admin",
 		),
 	),
-)); ?>
+)); 
+
+$this->widget('zii.widgets.CDetailView', array(
+		'data' => Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id)),
+		'attributes' => array(
+				'boardPerPage',
+				'commentPerPage'
+		),
+));

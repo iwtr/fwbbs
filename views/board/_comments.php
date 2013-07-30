@@ -9,7 +9,7 @@
 	</div>
 	
 	<div class="content">
-		<?php echo nl2br(CHtml::encode($data->contents)); ?>
+		<?php echo hide_ngword(nl2br(CHtml::encode($data->contents))); ?>
 	</div>
 	
 	<div class="image">
@@ -20,7 +20,9 @@
 	
 	<div class="clear"></div>
 	
-	<div style="text-align: right;">
+	<?php $v = $_GET['r']=='comment/update' || $_GET['r']=='comment/delete' ?
+					'hidden' : 'visible'; ?>
+	<div style="text-align: right; visibility:<?php echo $v ?>">
 		<?php echo CHtml::link('更新', array('comment/update', 'id'=>$data->id)); ?>
 		<?php
 		$linkoption = Yii::app()->user->checkAccess('deleteOwnComment', array('comment' => $data))||isAdmin() ?

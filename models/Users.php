@@ -50,6 +50,9 @@ class Users extends CActiveRecord
 			array('login_id, password', 'length', 'max'=>50),
 			array('password2', 'compare', 'compareAttribute'=>'password'),
 			array('name', 'length', 'max'=>20),
+			array('name', 'unique'),
+			array('name', 'match', 'pattern' => '/^[^¥[].*[^¥]]?$/',//[名前]のパターンを除外
+					'message' => '名前の両端に[]は使用できません'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, login_id, password, name, address, admin', 'safe', 'on'=>'search'),
@@ -131,12 +134,17 @@ class Users extends CActiveRecord
 	{
 		parent::afterSave();
 		
-		$loginform = new LoginForm;
 		
-		$loginform->login_id = $this->login_id;
-		$loginform->password = $_POST['Users']['password'];
 		
-		$loginform->login();
+		if(Yii::app()->user->isGuest)
+		{
+			$loginform = new LoginForm;
+
+			$loginform->login_id = $this->login_id;
+			$loginform->password = $_POST['Users']['password'];
+
+			$loginform->login();
+		}
 	}
 	
 }

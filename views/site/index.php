@@ -1,5 +1,6 @@
 <?php
 $this->pageTitle = Yii::app()->name;
+
 ?>
 
 <h2 style="margin-bottom: 0;">書き込みがあったトピック(最新５件)</h2>

@@ -3,29 +3,73 @@ class SettingsController extends Controller
 {
 	public $layout='//layouts/column2';
 	
+	public function filters()
+	{
+		return array(
+			'accessControl',
+			'postOnly + delete'
+		);
+	}
+	
 	public function accessRules()
 	{
 		return array(
 				array('allow',
 						'actions' => array('index', 'setpager',),
-						'users' => '@'
+						'users' => array('@')
 				),
-				array('arrow',
-						'actions' => array(),
+				array('allow',
+						'actions' => array('setngwords'),
 						'expression' => 'isAdmin()'
 				),
 				
 				array('deny',
-						'users' => '*'
+						'users' => array('*')
 				)
 		);
 	}
 	
 	public function actionIndex()
-	{
-		$this->render('index', array('user_id' => Yii::app()->user->id));
+	{	
+		$this->render('index');
 	}
 	
+	public function actionSetNGWords()
+	{
+		$model = new NGWords();
+		
+		if(isset($_POST['NGWords']))
+		{
+			$model->attributes = $_POST['NGWords'];
+			
+			if($model->save())
+			{
+				//$this->redirect(array('index'));
+			}
+			else
+			{
+				echo 'failed';
+			}
+		}
+		
+		if(isset($_POST['del_id']))
+		{
+			NGWords::model()->findByPk($_POST['del_id'])->delete();
+		}
+		
+		$dataProvider=new CActiveDataProvider('NGWords', array(
+				'criteria' => array(
+						'order' => 'word ASC'
+				),
+				'pagination' => false
+		));
+		
+		$this->render('setngwords', array(
+				'dataProvider' => $dataProvider,
+				'model' => $model
+		));
+	}
+
 	public function actionSetPager()
 	{
 		$model = $this->loadModel();
@@ -40,6 +84,8 @@ class SettingsController extends Controller
 		}
 		$this->render('setpager', array('model' => $model));
 	}
+	
+	
 	
 	public function loadModel()
 	{

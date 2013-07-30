@@ -11,7 +11,8 @@ $this->widget('zii.widgets.CMenu', array(
 		'htmlOptions'=>array('class'=>'settingmenu'),//main.css
 		'items' => array(
 				array('label' => 'ページ毎表示件数変更', 'url' => array('setpager')),
-				array('label' => 'foo'),
-				array('label' => 'bar')
+				array('label' => 'NGワード設定', 'url' => array('setngwords')),
+				array('label' => '')
 		)		
 ));
+

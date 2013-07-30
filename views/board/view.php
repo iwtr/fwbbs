@@ -32,7 +32,16 @@ $this->menu=array(
 );
 ?>
 
-<h1><?php echo $board->title; ?></h1>
+<h1><?php echo hide_ngword($board->title); ?></h1>
+
+<div id="comment-form">
+<?php
+$this->renderPartial('/comment/_form', array(
+		'comment' => $comment,
+		'board_id' => $board->id,
+));
+?>
+</div>
 
 <div id="comments">
 	<?php
@@ -45,11 +54,4 @@ $this->menu=array(
 	
 	?>
 </div>
-
-<?php
-$this->renderPartial('/comment/_form', array(
-		'comment' => $comment,
-		'board_id' => $board->id,
-));
-?>
 
