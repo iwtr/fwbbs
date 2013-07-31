@@ -92,7 +92,7 @@ class BoardController extends Controller
 						'order' => 'created_at DESC',
 				),
 				'pagination' => array(
-						'pageSize' => Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id))->commentPerPage,
+						'pageSize' => loadSetting('commentPerPage'),
 				),
 		));
 		
@@ -114,7 +114,7 @@ class BoardController extends Controller
 		$comment = new Comment();
 		
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($board);
+		$this->performAjaxValidation($board);
 		
 		
 		if(isset($_POST['Board']) && isset($_POST['Comment']))
@@ -265,7 +265,7 @@ class BoardController extends Controller
 			$board->attributes = $_GET['Board'];
 		}
 		$dataProvider = $board->search();
-		$dataProvider->pagination->pageSize = Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id))->boardPerPage;
+		$dataProvider->pagination->pageSize = loadSetting('boardPerPage');
 		/*
 		else
 		{

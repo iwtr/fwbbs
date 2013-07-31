@@ -9,8 +9,9 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'board-form',
+	'focus' => 'input:visible:enabled:first',
 	'htmlOptions' => array('enctype' => 'multipart/form-data'),
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note"><span class="required">*</span>のある項目は入力必須です。</p>
@@ -38,14 +39,14 @@
 			<div class="row">
 				<?php echo $form->labelEx($comment,'pen_name'); ?>
 				<?php echo $form->textField($board,'pen_name',array('size'=>11,'maxlength'=>11)); ?>
-				<?php echo $form->error($comment,'pen_name'); ?>
+				<?php echo $form->error($board,'pen_name'); ?>
 			</div>
 		<?php endif; ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($comment,'contents'); ?>
 		<?php echo $form->textArea($board,'contents',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($comment,'contents'); ?>
+		<?php echo $form->error($board,'contents'); ?>
 	</div>
 	
 	<div class="row">

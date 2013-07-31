@@ -6,7 +6,7 @@ return array(
 		// this is used in error pages
 		'adminEmail'=>'iwagaya@staff-info.co.jp',
 		// number of displayed per page
-		'boardPerPage' => 6,
+		'boardPerPage' => 10,
 		'commentPerPage' => 10,
 		// maximum number of comments that can be displayed in recent comments portlet
 		'recentCommentCount'=>10,

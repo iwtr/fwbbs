@@ -7,15 +7,20 @@
 <div class="form">
 
 <?php
-$id = $_GET['id'];
-$action = ($_GET['r']=='board/view') ? array('comment/create') : array("comment/update&id=$id");
+$properties = $_GET['r']=='comment/update' ?
+				array(
+						'id'=>'comment-form',
+						'focus' => array($comment, 'contents'),
+						'htmlOptions' => array('enctype' => 'multipart/form-data'),
+						'enableAjaxValidation'=>true
+				) :
+				array(
+						'id'=>'comment-form',
+						'htmlOptions' => array('enctype' => 'multipart/form-data'),
+						'enableAjaxValidation'=>true
+				);
 
-$form=$this->beginWidget('CActiveForm', array(
-		//'action' => $action,
-		'id'=>'comment-form',
-		'htmlOptions' => array('enctype' => 'multipart/form-data'),
-		'enableAjaxValidation'=>false,
-)); ?>
+$form=$this->beginWidget('CActiveForm', $properties); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 	
@@ -24,7 +29,7 @@ $form=$this->beginWidget('CActiveForm', array(
 	<?php if(Yii::app()->user->isGuest) : ?>
 	<div class="row">
 		<?php echo $form->labelEx($comment,'pen_name'); ?>
-		<?php echo $form->textField($comment,'pen_name',array('size'=>11,'maxlength'=>11)); ?>
+		<?php echo $form->textField($comment,'pen_name',array('size'=>11,'maxlength'=>11, 'placeholder' => '名無し')); ?>
 		<?php echo $form->error($comment,'pen_name'); ?>
 	</div>
 	<?php endif; ?>
@@ -52,7 +57,7 @@ $form=$this->beginWidget('CActiveForm', array(
 	<div class="row">
 		<?php echo $form->labelEx($comment,'del_key'); ?>
 		<?php echo $form->textField($comment,'del_key', array('value'=>'','size'=>4,'maxlength'=>4)); ?>
-		<?php echo $_GET['r']=='board/view' ? '入力がない場合は0000になります。' : ''; ?>
+		<?php echo $comment->isNewRecord ? '入力がない場合は0000になります。' : ''; ?>
 		<?php echo $form->error($comment,'del_key'); ?>
 	</div>
 	<?php endif;endif; ?>

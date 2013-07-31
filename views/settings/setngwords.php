@@ -1,4 +1,9 @@
 <?php
+/*
+ * $this SettingController
+ * $model NGWord
+ */
+
 //Yii::app()->clientScript->registerCoreScript('jquery');
 Yii::app()->clientScript->registerScript('odd', "$('.ngwords .row:odd').css('background-color', '#eee');");
 Yii::app()->clientScript->registerScript('even', "$('.ngwords .row:even').css('background-color', '#ffc');");

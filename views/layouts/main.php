@@ -18,9 +18,15 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body class="body1">
-	
-<div class="container" id="page">
+<?php 
+$bg = loadSetting('color_background');
+$page = loadSetting('color_page');
+?>
+
+<body <?php echo $bg!=NULL ? 'style="background:'.$bg.';"' : ''; ?>>
+
+
+<div class="container" id="page" <?php echo $page!=NULL ? 'style="background:'.$page.';"' : ''; ?>>
 
 	<div id="header">
 		

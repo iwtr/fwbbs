@@ -15,7 +15,7 @@ class SettingsController extends Controller
 	{
 		return array(
 				array('allow',
-						'actions' => array('index', 'setpager',),
+						'actions' => array('index', 'setpager', 'changecolor'),
 						'users' => array('@')
 				),
 				array('allow',
@@ -34,6 +34,23 @@ class SettingsController extends Controller
 		$this->render('index');
 	}
 	
+	//ページ内表示件数変更
+	public function actionSetPager()
+	{
+		$model = $this->loadModel();
+		
+		if(isset($_POST['Settings']))
+		{
+			$model->attributes = $_POST['Settings'];
+			if($model->save())
+			{
+				$this->redirect(array('index'));
+			}
+		}
+		$this->render('setpager', array('model' => $model));
+	}
+	
+	//NGワード設定
 	public function actionSetNGWords()
 	{
 		$model = new NGWords();
@@ -69,24 +86,28 @@ class SettingsController extends Controller
 				'model' => $model
 		));
 	}
-
-	public function actionSetPager()
+	
+	//画面色変更
+	public function actionChangeColor()
 	{
 		$model = $this->loadModel();
 		
-		if(isset($_POST['Settings']))
+		if(isset($_POST['yt0']) || isset($_POST['init']))
 		{
-			$model->attributes = $_POST['Settings'];
-			if($model->save())
+			$model->color_background = $_POST['color_background'];
+			$model->color_page = $_POST['color_page'];
+			if(!$model->save())
 			{
-				$this->redirect(array('index'));
+				$model->addError('color_background', 'エラー');
 			}
 		}
-		$this->render('setpager', array('model' => $model));
+		
+		$this->render('changecolor', array(
+				'model' => $model
+		));
 	}
-	
-	
-	
+
+
 	public function loadModel()
 	{
 		$model = Settings::model()->find('user_id=:user_id', array(':user_id' => Yii::app()->user->id));

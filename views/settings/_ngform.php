@@ -1,7 +1,7 @@
 <?php
 /*
- * $this SettingController
- * $model 
+ * $this SettingsController
+ * $model NGWord
  * $form CActiveForm
 */
 ?>

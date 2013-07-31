@@ -12,7 +12,7 @@ $this->widget('zii.widgets.CMenu', array(
 		'items' => array(
 				array('label' => 'ページ毎表示件数変更', 'url' => array('setpager')),
 				array('label' => 'NGワード設定', 'url' => array('setngwords')),
-				array('label' => '')
+				array('label' => '色変更', 'url' => array('changecolor'))
 		)		
 ));
 

@@ -9,6 +9,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'board-form',
+	'focus' => 'input:first',
 	'enableAjaxValidation'=>false,
 )); ?>
 	

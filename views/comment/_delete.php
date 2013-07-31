@@ -10,6 +10,7 @@
 
 $form=$this->beginWidget('CActiveForm', array(
 		'id'=>'comment-form',
+		'focus' => 'input:first',
 		'enableAjaxValidation'=>false,
 )); ?>
 

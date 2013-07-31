@@ -44,4 +44,14 @@ function hide_ngword($item)
 	return $item;
 }
 
+function loadSetting($columnname)
+{
+	if(!Yii::app()->user->isGuest)
+	{
+		$setting = Settings::model()->findByAttributes(array('user_id' => Yii::app()->user->id))->$columnname;
+		return $setting;
+	}
+	return;
+}
+
 ?>

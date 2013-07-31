@@ -2,6 +2,9 @@
 /* @var $this BoardController */
 /* @var $board Board */
 
+Yii::app()->clientScript->registerScript('cform',
+				"$('#toggle_sw').click(function(){ $('#comment-form').slideToggle('slow');}).next().hide();");
+
 $this->breadcrumbs=array(
 	'トピック一覧'=>array('index'),
 	$board->title,
@@ -34,6 +37,7 @@ $this->menu=array(
 
 <h1><?php echo hide_ngword($board->title); ?></h1>
 
+<span id="toggle_sw">投稿フォーム</span>
 <div id="comment-form">
 <?php
 $this->renderPartial('/comment/_form', array(

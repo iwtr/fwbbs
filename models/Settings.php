@@ -33,7 +33,9 @@ class Settings extends CActiveRecord
 				'id' => 'ID',
 				'user_id' => 'id',
 				'boardPerPage' => 'トピック最大表示数',
-				'commentPerPage' => 'コメント最大表示数'
+				'commentPerPage' => 'コメント最大表示数',
+				'color_background' => '背景色',
+				'color_page' => 'ページ色',
 		);
 	}
 	

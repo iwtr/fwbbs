@@ -5,6 +5,8 @@
 ?>
 
 <div class="wide form">
+	<h3>検索フォーム</h3>
+	
 	<?php $form=$this->beginWidget('CActiveForm', array(
 		'action'=>Yii::app()->createUrl($this->route),
 		'method'=>'get',
