@@ -96,9 +96,10 @@ class SettingsController extends Controller
 		{
 			$model->color_background = $_POST['color_background'];
 			$model->color_page = $_POST['color_page'];
+			$model->color_commentbg = $_POST['color_commentbg'];
 			if(!$model->save())
 			{
-				$model->addError('color_background', 'エラー');
+				$model->addError('color_background', '入力エラー');
 			}
 		}
 		

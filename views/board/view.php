@@ -49,11 +49,12 @@ $this->renderPartial('/comment/_form', array(
 
 <div id="comments">
 	<?php
-	
+	$cbg = loadSetting('color_commentbg');
 	//コメントのページング
 	$this->widget('zii.widgets.CListView', array(
 			'dataProvider'=>$dataProvider,
 			'itemView'=>'_comments',
+			'viewData' => array('cbg' => $cbg)
 	));
 	
 	?>

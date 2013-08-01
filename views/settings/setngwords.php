@@ -3,10 +3,8 @@
  * $this SettingController
  * $model NGWord
  */
-
-//Yii::app()->clientScript->registerCoreScript('jquery');
-Yii::app()->clientScript->registerScript('odd', "$('.ngwords .row:odd').css('background-color', '#eee');");
-Yii::app()->clientScript->registerScript('even', "$('.ngwords .row:even').css('background-color', '#ffc');");
+Yii::app()->clientScript->registerScript('odd', "$('.ngwords .row:odd').addClass('row_even');");
+Yii::app()->clientScript->registerScript('even', "$('.ngwords .row:even').addClass('row_odd');");
 
 
 $this->breadcrumbs = array(

@@ -6,8 +6,10 @@ $this->breadcrumbs=array(
 		$image
 );
 ?>
-<div style="text-align: center;">
+
+<div id="test" style="text-align: center;">
 	<?php
-	echo CHtml::image('/~iwagaya/fwbbs/images/'.$image, '#');
+	echo CHtml::image('/~iwagaya/fwbbs/images/'.$image, '#', array('id' => 'image'));
 	?>
 </div>
+

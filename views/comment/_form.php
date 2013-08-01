@@ -7,10 +7,10 @@
 <div class="form">
 
 <?php
-$properties = $_GET['r']=='comment/update' ?
+$properties = !$comment->isNewRecord ?
 				array(
 						'id'=>'comment-form',
-						'focus' => array($comment, 'contents'),
+						//'focus' => array($comment, 'contents'),
 						'htmlOptions' => array('enctype' => 'multipart/form-data'),
 						'enableAjaxValidation'=>true
 				) :

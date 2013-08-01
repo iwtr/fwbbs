@@ -89,7 +89,7 @@ class UsersController extends Controller
 		$settings = new Settings;
 		
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 		
 		if(isset($_POST['Users']))
 		{
@@ -106,7 +106,7 @@ class UsersController extends Controller
 			'model'=>$model,
 		));
 	}
-
+	
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -116,9 +116,21 @@ class UsersController extends Controller
 	{
 		$model=$this->loadModel();
 		
+		//CActiveForm::validate($model);
+		
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+		//$this->performAjaxValidation($model);
+		
+		/*
+		if(isset($_POST['ajax']) && $_POST['ajax']==='users-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}*/
+		
+		if(isset($_POST['ajax']))
+			testPrint($_POST);
+		
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
@@ -217,6 +229,7 @@ class UsersController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
+		//if(Yii::app()->getRequest()->getIsAjaxRequest())
 		if(isset($_POST['ajax']) && $_POST['ajax']==='users-form')
 		{
 			echo CActiveForm::validate($model);

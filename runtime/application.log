@@ -7227,3 +7227,612 @@ in /Users/iwagaya/Sites/fwbbs/protected/controllers/SettingsController.php (106)
 2013/07/31 16:09:33 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
 in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (81)
 in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/07/31 17:23:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'あなたはこのアクションを実行する権限がありません。' in /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#11 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=users/admin
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php?r=users/view/id/2
+---
+2013/08/01 11:17:38 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (138)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:11:31 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:11:45 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:11:58 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:12:06 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:12:14 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:12:27 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:12:37 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:12:45 [warning] [application] "Comment" の安全でない属性"image"をセットできませんでした。
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (83)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:28:05 [error] [php] Object of class CClientScript could not be converted to string (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php:30)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): BoardController->renderFile()
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(285): BoardController->render()
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionIndex()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): BoardController->runAction()
+#5 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): BoardController->filterAccessControl()
+#8 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): BoardController->runActionWithFilters()
+#11 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): BoardController->run()
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php?r=board/index
+in /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php (30)
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php (285)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 13:28:08 [error] [php] Object of class CClientScript could not be converted to string (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php:30)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#1 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#2 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+in /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php (30)
+in /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php (68)
+in /Users/iwagaya/Sites/fwbbs/index.php (17)
+2013/08/01 14:50:21 [error] [exception.CException] exception 'CException' with message 'プロパティ "CDbConnection.schemaCacheingDuration" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/YiiBase.php(220): CComponent->__set('schemaCacheingD...', 3600)
+#1 /Users/iwagaya/Sites/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(438): CModule->getComponent('db')
+#3 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(623): CApplication->getDb()
+#4 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#5 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Board))
+#6 /Users/iwagaya/Sites/yii/framework/web/CActiveDataProvider.php(74): CActiveRecord::model('Board')
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(53): CActiveDataProvider->__construct('Board', Array)
+#8 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('')
+#13 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#14 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#16 {main}
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+---
+2013/08/01 14:51:05 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1375336265
+2013/08/01 14:51:05 [error] [system.db.CDbCommand] CDbCommand::execute()がCDbCommand はSQL文を準備できません。:SQLSTATE[HY000]: General error: 1 no such table: YiiCacheで失敗しました。実行されたSQL文は: DELETE FROM YiiCache WHERE expire>0 AND expire<1375336265
+2013/08/01 15:11:11 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:13:42 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:18:15 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:18:59 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:19:44 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:21:55 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:22:11 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(52): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:27:32 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(53): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 15:28:15 [error] [exception.CException] exception 'CException' with message 'プロパティ "Settings.color_commentbg" が定義されていません。' in /Users/iwagaya/Sites/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('color_commentbg')
+#1 /Users/iwagaya/Sites/fwbbs/protected/components/globals.php(51): CActiveRecord->__get('color_commentbg')
+#2 /Users/iwagaya/Sites/fwbbs/protected/views/board/view.php(53): loadSetting('color_commentbg')
+#3 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require('/Users/iwagaya/...')
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/iwagaya/...', Array, true)
+#5 /Users/iwagaya/Sites/yii/framework/web/CController.php(869): CBaseController->renderFile('/Users/iwagaya/...', Array, true)
+#6 /Users/iwagaya/Sites/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#7 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(105): CController->render('view', Array)
+#8 [internal function]: BoardController->actionView('1')
+#9 /Users/iwagaya/Sites/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(BoardController), Array)
+#10 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(BoardController), Object(ReflectionMethod), Array)
+#11 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('board/view/id/1')
+#21 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#23 {main}
+REQUEST_URI=/~iwagaya/fwbbs/board/view/id/1
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/board/index
+---
+2013/08/01 16:03:14 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/site/index
+2013/08/01 16:04:01 [error] [php] require_once(/~iwagaya/fwbbscss/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/site/index
+2013/08/01 16:04:46 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/site/index
+2013/08/01 16:05:09 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SettingsController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SettingsController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SettingsController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SettingsController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SettingsController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SettingsController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SettingsController.php(34): SettingsController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SettingsController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): SettingsController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): SettingsController->filterAccessControl()
+#17 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SettingsController->runActionWithFilters()
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SettingsController->run()
+#21 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/settings/index
+2013/08/01 16:05:10 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): BoardController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): BoardController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): BoardController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): BoardController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): BoardController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): BoardController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/BoardController.php(285): BoardController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): BoardController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(133): BoardController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Users/iwagaya/Sites/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /Users/iwagaya/Sites/yii/framework/web/filters/CInlineFilter.php(58): BoardController->filterAccessControl()
+#17 /Users/iwagaya/Sites/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /Users/iwagaya/Sites/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): BoardController->runActionWithFilters()
+#20 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): BoardController->run()
+#21 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/board/index
+2013/08/01 16:05:11 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:18)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+2013/08/01 16:10:22 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:19)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+2013/08/01 16:10:26 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:19)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+2013/08/01 16:12:17 [error] [php] require_once(/~iwagaya/fwbbs/css/css_color.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (/Users/iwagaya/Sites/fwbbs/protected/views/layouts/main.php:19)
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /Users/iwagaya/Sites/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /Users/iwagaya/Sites/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Users/iwagaya/Sites/fwbbs/protected/views/layouts/column2.php(31): SiteController->endContent()
+#7 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(126): require()
+#8 /Users/iwagaya/Sites/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /Users/iwagaya/Sites/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Users/iwagaya/Sites/fwbbs/protected/controllers/SiteController.php(68): SiteController->render()
+#11 /Users/iwagaya/Sites/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Users/iwagaya/Sites/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /Users/iwagaya/Sites/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /Users/iwagaya/Sites/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Users/iwagaya/Sites/fwbbs/index.php(17): CWebApplication->run()
+REQUEST_URI=/~iwagaya/fwbbs/index.php
+2013/08/01 16:34:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエスト"css/css_color.php"を解決できません。' in /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/css_color.p...')
+#1 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/~iwagaya/fwbbs/css/css_color.php
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/08/01 16:35:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエスト"css/css_color.php"を解決できません。' in /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/css_color.p...')
+#1 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/~iwagaya/fwbbs/css/css_color.php
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/08/01 16:35:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエスト"css/css_color.php"を解決できません。' in /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/css_color.p...')
+#1 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/~iwagaya/fwbbs/css/css_color.php
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---
+2013/08/01 16:38:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'リクエスト"css/css_color.php"を解決できません。' in /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/iwagaya/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('css/css_color.p...')
+#1 /Users/iwagaya/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Users/iwagaya/Sites/fwbbs/index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/~iwagaya/fwbbs/css/css_color.php
+HTTP_REFERER=http://127.0.0.1/~iwagaya/fwbbs/index.php
+---

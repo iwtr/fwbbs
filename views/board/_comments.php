@@ -1,5 +1,5 @@
-<?php //foreach($datas as $data): ?>
-<div class="comment">
+
+<div class="comment" <?php echo $cbg!=NULL ? 'style="background:'.$cbg.';"' : ''; ?>>
 	
 	<div class="name">
 		<?php echo CHtml::encode(cname($data)); ?>
@@ -33,4 +33,3 @@
 	</div>
 
 </div><!-- comment -->
-<?php //endforeach; ?>

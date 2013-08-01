@@ -38,7 +38,7 @@
 		if(Yii::app()->user->isGuest) : ?>
 			<div class="row">
 				<?php echo $form->labelEx($comment,'pen_name'); ?>
-				<?php echo $form->textField($board,'pen_name',array('size'=>11,'maxlength'=>11)); ?>
+				<?php echo $form->textField($board,'pen_name',array('size'=>11,'maxlength'=>11, 'placeholder' => '名無し')); ?>
 				<?php echo $form->error($board,'pen_name'); ?>
 			</div>
 		<?php endif; ?>

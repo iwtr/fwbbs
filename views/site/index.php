@@ -21,7 +21,7 @@ $this->pageTitle = Yii::app()->name;
 */ ?>
 
 <div style="display: inline-block;">
-<?php
+<?
 $this->widget('zii.widgets.grid.CGridView', array(
 		'id' => 'update-grid',
 		'dataProvider' => $data,

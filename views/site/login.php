@@ -14,6 +14,7 @@ $this->breadcrumbs=array(
 <div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
+	'focus' => 'input:text[value=""]:first',
 	'enableClientValidation'=>true,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,

@@ -37,17 +37,15 @@ return array(
 				'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
-			//'showScriptName' => false,
+			'showScriptName' => false,
 			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-				//'board/'=>'board/index',
-				/*'board/<id:\d+>/<title:.*?>'=>'board/view',*/
-		//	),
+			//'urlSuffix' => '.html'
+		),
+		
+		//'cache' => array(
+		//		'class' => 'CDbCache'
 		//),
 		
 		'db'=>array(
@@ -57,6 +55,7 @@ return array(
 			'username' => 'root',
 			'password' => '12345',
 			'charset' => 'utf8',
+			//schemaCachingDuration' => 3600,
 		),
 		
 		'authManager' => array(
@@ -77,11 +76,11 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
 		),
 	),

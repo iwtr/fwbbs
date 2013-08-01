@@ -14,6 +14,9 @@
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/color.css" />
+
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -22,8 +25,10 @@
 $bg = loadSetting('color_background');
 $page = loadSetting('color_page');
 ?>
-
-<body <?php echo $bg!=NULL ? 'style="background:'.$bg.';"' : ''; ?>>
+	
+<?php //echo $bg!=NULL ? 'style="background:'.$bg.';"' : ''; ?>
+	
+<body id="color_background" >
 
 
 <div class="container" id="page" <?php echo $page!=NULL ? 'style="background:'.$page.';"' : ''; ?>>

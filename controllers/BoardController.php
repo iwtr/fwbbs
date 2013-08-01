@@ -76,6 +76,8 @@ class BoardController extends Controller
 		
 		$comment = new Comment;
 		
+		$this->performAjaxValidation($comment);
+		
 		if(isset($_POST['Comment']))
 		{
 			$comment->attributes = $_POST['Comment'];
@@ -325,11 +327,11 @@ class BoardController extends Controller
 	 * Performs the AJAX validation.
 	 * @param Board $board the model to be validated
 	 */
-	protected function performAjaxValidation($board)
+	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='board-form')
+		if(isset($_POST['ajax']) && ($_POST['ajax']==='board-form' || $_POST['ajax']==='comment-form'))
 		{
-			echo CActiveForm::validate($board);
+			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}

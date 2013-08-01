@@ -2,6 +2,17 @@
 /* @var $this CommentController */
 /* @var $model Comment */
 
+Yii::app()->clientScript->registerScript('tareafocus',
+				"$('#Comment_contents')
+					.focus(function(){
+						$(this).select();
+						return false;
+					})
+					.click(function(){
+						$(this).select();
+					});"
+);
+
 $this->breadcrumbs=array(
 	'Comments'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),

@@ -36,6 +36,7 @@ class Settings extends CActiveRecord
 				'commentPerPage' => 'コメント最大表示数',
 				'color_background' => '背景色',
 				'color_page' => 'ページ色',
+				'color_commentbg' => 'コメント背景',
 		);
 	}
 	

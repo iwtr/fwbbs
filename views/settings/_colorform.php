@@ -33,6 +33,15 @@
 		?>
 	</div>
 	
+	<div class="row">
+		<?php
+		$current = "'".$model->color_commentbg."'";
+		echo $form->labelEx($model, 'color_commentbg');
+		echo "<input type='color' name='color_commentbg' value=$current>";
+		echo $form->error($model, 'color_commentbg');
+		?>
+	</div>
+	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('変更'); ?>
 	</div>
@@ -46,7 +55,8 @@
 				'params' => array(
 						'init' => 'init',
 						'color_background' => NULL,
-						'color_page' => NULL
+						'color_page' => NULL,
+						'color_commentbg' => NULL
 				),
 		)); ?>
 	</div>
